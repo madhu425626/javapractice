@@ -1,0 +1,159 @@
+void main(){
+	
+	int num = Integer.parseInt(IO.readln("Enter any value : "));
+	IO.println(isDuckNum(num));
+}
+
+/*
+int sumOfDigits(int num){
+	int sum = 0;
+	int product = 1;
+
+	while(num != 0){
+		int digit = num%10;
+		sum = sum + digit;
+		product = product*digit;
+		num = num/10;
+	}	IO.println(sum);
+	return product;
+	  
+}
+
+
+int numOfDigits(int num){
+	if(num == 0)
+		return 1;
+	
+	int count = 0;
+	while(num != 0){
+		num = num/10;
+		count++;
+	}
+
+	return count;
+	
+}
+
+int largestOfDigits(int num){
+	int max = 0;
+	while(num !=0){
+		int digit = num%10;
+		if(max < digit)
+			max = digit;
+		
+		num = num/10;
+		
+	}return max;
+}
+
+int smallestOfDigit(int num){
+	int min = 9;
+
+	
+	while(num != 0){
+		int digit = num%10;
+		if (digit<min)
+		{
+			min = digit;
+		}
+		num = num/10;
+	}return min;
+}
+
+boolean isPalindrome(int num){ //5005
+	int temp = num;
+	int rev = 0;
+	while(num !=0 ){
+		int digit = num%10;//5
+		rev = (rev*10)+digit;//5
+		num = num/10;//500
+	}return temp == rev;
+}
+
+boolean isStrong(int num){
+	int temp = num;
+	int sum = 0;
+	while(num != 0){
+		int digit = num%10;
+		int fact = FactorialOfNum(digit);
+		sum = sum+fact;
+		num = num/10;
+			}
+			return sum == temp;
+	
+}
+
+int FactorialOfNum(int num){
+	int factorial = 1;
+	for(int i = 1; i<=num; i++){
+		factorial = factorial * i;
+	} return factorial;
+}
+*/
+
+
+/*
+boolean isSpy(int num){
+	int sum = SumOfNum(num);
+	int product = ProductOfNum(num);
+	
+	return sum == product;
+}
+
+
+
+int SumOfNum(int num){
+	int sum = 0;
+	while(num!=0){
+		int digit = num%10;
+		sum = sum+digit;
+		num = num/10;
+	} return sum;
+}
+
+int ProductOfNum(int num){
+	int product = 1;
+	while (num != 0)
+	{
+		int digit = num%10;
+		product = product*digit;
+		num = num/10;
+	} return product;
+}
+
+boolean isDuckNum(int num){
+	
+	if(num <= 0)
+		return false;
+	
+	while(num != 0){
+		int digit = num%10;
+		if(digit == 0){
+			return true;
+			
+		}
+		num=num/10;
+	} return false;
+}
+
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,72 @@
+Assignments on Numerical Logical Programs :
+-------------------------------------------
+Assignment 01 :
+---------------
+WAP to count the digits in a given number.
+Example :
+1234  = 4 digits
+  78  = 2 digits
+ 999  = 3 digits
+
+Assignment 02:
+--------------
+WAP to count all the even digits in a given number.
+Example :
+1234  =  2 digits
+  333 =  0 digits
+ 8888 =  4 digits  
+
+Assignment 03:
+--------------
+WAP to find sum of all the digits in a given number.
+Example :
+123  = 6
+555  = 15
+102  = 3
+
+Assignment 04:
+--------------
+WAP to find the smallest digit in a given number.
+Example :
+129  =  2
+144  =  4
+583  =  3
+
+
+Assignment 05:
+--------------
+WAP to find the reverse of a number :
+Example :
+567  =  765
+100  =  1
+123  =  321
+
+Assignment 05:
+--------------
+WAP to verify whether a number is palindrome or not ?
+Example :
+121     = true
+180     = false
+12321   = true
+
+Assignment 06 :
+---------------
+WAP to find the factorial of a number.
+Example :
+5  = 120
+4  = 24
+0  = 1
+
+
+Assignment 06 :
+---------------
+WAP to verify whether a number is Strong or not ?
+Example :
+145  = true
+
+
+Assignment 07 :
+---------------
+WAP to print all the prime numbers from 1 to 100?
+Example :
+2 3 5 7 11 13 17 19 23 29 31 37 41 43 47 53 59 61 67 71 73 79 83 89 97
