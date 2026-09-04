@@ -1,0 +1,193 @@
+MCQ on Floating point Literals :
+----------------------------------
+1. Which of the following is a valid floating-point literal in Java?
+A) 12.5
+B) 12.5f
+C) 12.5D
+D) All of the above
+
+
+2. By default, a floating-point literal in Java is of type:
+A) float
+B) double
+C) long
+D) int
+
+
+3. Which suffix is used to specify a float literal?
+A) L
+B) F or f
+C) D or d
+D) B
+
+
+4. Which declaration is valid?
+A) float f = 12.5;
+B) float f = 12.5f;
+C) float f = "12.5";
+D) float f = 12.5D;
+
+
+5. What is the type of the literal 25.67?
+A) int
+B) float
+C) double
+D) long
+
+
+
+6. What is the value of 1.5e2?
+A) 15
+B) 150
+C) 1500
+D) 0.15
+
+
+
+7. Which of the following is NOT a valid floating-point literal?
+A) 12.5f
+B) .5
+C) 5.
+D) 12.5ff
+
+
+8. Which suffix is optional for a double literal?
+A) F
+B) L
+C) D
+D) B
+
+9. Which of the following statements will compile successfully?
+A) float f = 10.5;
+B) float f = 10.5f;
+C) float f = 10.5d;
+D) float f = 10.5D;
+
+
+10. Which of the following statements will compile successfully?
+A) float f = 10.5;
+B) float f = 10.5f;
+C) float f = 10.5d;
+D) float f = 10.5D;
+
+11. Which of the following literals is of type float?
+A) 5.5
+B) 5.5D
+C) 5.5F
+D) 5.5d
+
+12. Is 0.0 a valid floating-point literal?
+A) Yes
+B) Nos
+
+
+13. What happens when the following code is compiled?
+    byte b = 10.5;
+
+A) Compiles successfully
+B) Runtime Error
+C) Compile-Time Error
+D) Value becomes 10
+
+
+14. What happens when the following code is compiled?
+    long l = 10.5F;
+
+A) Compiles successfully
+B) Runtime Error
+C) Compile-Time Error
+D) Value becomes 10.5
+
+
+
+15. What happens when the following code is compiled?
+    double d = 0X10.5;
+A) Compiles successfully
+B) Runtime Error
+C) Compile-Time Error
+D) Value becomes 10.5
+
+
+16. Which statement compiles successfully?
+A) int x = 50.0;
+B) int x = (int)50.0;
+C) int x = 50.0F;
+D) int x = 50.0D;
+
+
+17. What is the output?
+long l = (long)12.99;
+IO.println(l);
+A) 12.99
+B) 13
+C) 12
+D) Compile-Time Error
+
+
+18. How many compile-time errors are present?
+byte b = 10.0;
+short s = 20.0f;
+int i = 30.0;
+long l = 40;
+
+A) 1
+B) 2
+C) 3
+D) 4
+
+
+19. Can a floating-point literal be assigned directly to an integral data type in Java?
+
+A) Yes, always
+B) No, never without explicit type casting
+C) Only to long
+D) Only when the value is small.
+
+
+20. Why does Java not allow direct assignment of a floating-point literal to an integral type?
+A) To save memory
+B) To improve performance
+C) To prevent possible loss of fractional data
+D) Because integral types are larger.
+
+
+
+Coding Part :
+=============
+Read the input from java.lang.IO class.
+
+Program 01:
+-----------
+Write a  program in Java that will generate and print the bill at Dominos for four chicken rolls (@ Rs 60 per chicken rolls) and three vegetable puffs (@ Rs 25 per vegetable puffs). There is a special discount of Rs 50 on the final bill amount. Calculate and print final bill as well as all item bill.
+
+
+Program 02:
+-----------
+Write a Java program that generates a bill for:
+
+4 Veg Biryani (@ ₹180 each)
+2 Soft Drinks (@ ₹40 each)
+A discount of 5% is applied on the total bill. Print all details.
+
+
+Program 03:
+----------
+Write a program in Java to display the following pattern on the screen without using loop.
+@@@@@@@@
+@      @
+@      @
+@      @
+@      @
+@      @
+@@@@@@@@
+
+
+Program 04:
+-----------
+Write a program to input the basic salary of a person. He gets 15% of the basic as HRA, 15% of the basic as Conveyance allowance and 10% of the basic as Entertainment allowance. The total salary is calculated by adding Basic + HRA + Conveyance + Entertainment Allowance. Calculate and print the total salary of person.
+
+
+Program 05 :
+-------------
+Write a program in java to Fahrenheit to Celsius Program
+Formula is :-  celsius=((fahrenheit-32)*5)/9;
