@@ -7,7 +7,7 @@ class Person{
   Person(int age, String name){
     this.age = age;
    this.name = name;
-    this.heart = new Heart(72); //holding obj not value
+    this.heart = new Heart(72); //reference heart is holding obj not value
   }
 
   void display(){
