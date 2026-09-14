@@ -1,19 +1,25 @@
 package com.madhu.abstract_class;
+import java.util.Scanner;
+
 
 public class ProductStore {
 	public static void main(String[] args) {
 		
-		int choise = Integer.parseInt(IO.readln("enter"));
+		Scanner sc = new Scanner(System.in);
+		int choise = sc.nextInt();
+		sc.nextLine(); 
 		
 		switch(choise) {
 		
 		case 1 ->{
 			
-			String product = IO.readln();
-			double price = Double.parseDouble(IO.readln());
-			String category = IO.readln();
-			String License = IO.readln();
-			double discount = Double.parseDouble(IO.readln());
+			
+			String product = sc.nextLine();
+			double price = sc.nextDouble();
+			sc.nextLine(); 
+			String category = sc.nextLine();
+			String License = sc.nextLine();
+			double discount = sc.nextDouble();
 			
 			Product p = new DigitalProduct(product,price,category,License);
 			//p.applyDiscount(discount);
@@ -26,22 +32,25 @@ public class ProductStore {
 		
 			case 2 ->{
 			
-			String product = IO.readln();
-			double price = Double.parseDouble(IO.readln());
-			String category = IO.readln();
-			double weight = Double.parseDouble(IO.readln());
-			double discount = Double.parseDouble(IO.readln());
+			String product = sc.nextLine();
+			double price = sc.nextDouble();
+			sc.nextLine(); 
+			String category = sc.nextLine();
+			double weight = sc.nextDouble();
+			double discount = sc.nextDouble();
+			sc.close();
 			
 			Product p = new PhysicalProduct(product,price,category,weight);
 			PhysicalProduct pp = (PhysicalProduct)p;
 			
 			pp.display(discount);
-			IO.println("Discount : "+p.applyDiscount(discount));
-			IO.println("New Price : "+(p.getPrice() - p.applyDiscount(discount)));
-			IO.println("Tax : "+(p.getPrice() - p.applyDiscount(discount))*0.08);
-			IO.println("Shopping Cost : "+pp.calculateShippingCost());
+//			IO.println("Discount : "+p.applyDiscount(discount));
+//			IO.println("New Price : "+(p.getPrice() - p.applyDiscount(discount)));
+//			IO.println("Tax : "+(p.getPrice() - p.applyDiscount(discount))*0.08);
+//			IO.println("Shopping Cost : "+pp.calculateShippingCost());
 		}
-		}
+			default -> IO.println("Invalid Input");
+		};
 
 		
 	}
@@ -67,25 +76,19 @@ public class ProductStore {
 		return name;
 	}
 
-	public void setName(String name) {
-		this.name = name;
-	}
+	
 
 	public double getPrice() {
 		return price;
 	}
 
-	public void setPrice(double price) {
-		this.price = price;
-	}
+	
 
 	public String getCategory() {
 		return category;
 	}
 
-	public void setCategory(String category) {
-		this.category = category;
-	}
+	
 
 	public void display() {
 		//IO.println("Digital Product");
@@ -173,9 +176,6 @@ public class ProductStore {
 		return shippingWeight;
 	}
 
-	public void setShippingWeight(double shippingWeight) {
-		this.shippingWeight = shippingWeight;
-	}
 
 	public double calculateShippingCost() {
 		return getShippingWeight()*5;
