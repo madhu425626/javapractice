@@ -6,8 +6,8 @@ public class Main {
         int x = Integer.parseInt(IO.readln().trim());
         int y = Integer.parseInt(IO.readln());
 
-        Calculator sum =   ( x,y) -> {
-            return x+y;
+        Calculator sum =   ( a,b) -> {
+            return a+b;
         };
        
 
