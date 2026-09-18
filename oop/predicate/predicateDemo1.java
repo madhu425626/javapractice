@@ -1,33 +1,24 @@
 import java.util.*;
 import java.util.function.Predicate;
 
-public class predicateDemo1 {
+public class CarSelling {
     public static void main(String[] args) {
         // Write your code here
         String name = IO.readln();
         double price  = Double.parseDouble(IO.readln());
         int mileage = Integer.parseInt(IO.readln());
 
-        Predicate<String> p1 =  Car -> 
-        {
-            if(price <= 500000 && mileage >= 20)
-            {
-                return true;
-            }
+        Predicate<Car> p1 =  car -> car.price() <= 500000 && car.mileage() >= 20;
+       
+        Car userCar = new Car(name,price,mileage);
 
-            else
-            {
-                return false;
-            }
-        };
-
-        if(p1.test(name))
+        if(p1.test(userCar))
         {
-            IO.println(name+" is eligible for sale");
+            IO.println(userCar.brand()+" is eligible for sale");
         }
         else
         {
-            IO.println(name+" is not eligible for sale");
+            IO.println(userCar.brand()+" is not eligible for sale");
         }
     }
 }
