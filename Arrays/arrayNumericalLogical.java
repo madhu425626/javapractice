@@ -219,7 +219,34 @@ public class Main {
       IO.println(Arrays.toString(array1));
     }
 }
-________________________________________________________________________
+
+----------2nd logic --------
+    import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      int a [] = {1,0,1,0,1,0,1,1,1,1,1,1,0,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,0};
+      int sum = 0;
+      int maxSum = 0;
+      int i = 0;
+      while(i<a.length)
+      {
+        if(a[i] != 0)
+        {
+        sum += a[i];
+
+        }
+        else{
+
+        maxSum = sum;
+          sum = 0;
+        }
+        i++;
+      }     
+      IO.println(maxSum);
+    }
+}
+    _______________________________________________________________________
     //third and fourthLargest
 import java.util.*;
 
